@@ -1,5 +1,6 @@
+const fs = require('fs');
+
 const copy = async () => {
-    // Write your code here 
 };
 
 await copy();
