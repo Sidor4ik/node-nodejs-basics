@@ -13,10 +13,10 @@ const copy = async () => {
 	  });
 	} catch (err) {
 	  if (err.code === "ENOENT" || err.code === "ERR_FS_CP_EEXIST") {
-		 throw new Error("FS operation failed");
+		console.error('FS operation failed')
 	  }
 	}
-
+	
 };
 
 await copy();
