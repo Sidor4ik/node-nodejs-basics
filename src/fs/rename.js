@@ -1,9 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const sourcePath = path.resolve("src/fs/files/wrongFilename.txt");
-const destinationPath = path.resolve("src/fs/files/properFilename.md");
-
 const rename = async () => {
    const sourcePath = path.resolve("src/fs/files/wrongFilename.txt");
   const targetFile = path.resolve("src/fs/files/properFilename.md");
