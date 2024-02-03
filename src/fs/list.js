@@ -3,7 +3,6 @@ import path from "node:path";
 
 const list = async () => {
 	const dirName = path.resolve("src/fs/files")
-
 	try {
 	  const dirContents = await fs.readdir(dirName)
 	 for (const file of dirContents) {
