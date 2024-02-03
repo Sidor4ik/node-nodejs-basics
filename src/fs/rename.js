@@ -13,7 +13,7 @@ const rename = async () => {
       throw err;
     }
     try {
-      await fs.rename(sourcePath, destinationPath);
+      await fs.rename(sourcePath, targetFile);
     } catch (err) {
       if (err.code === "ENOENT") {
         throw new Error("FS operation failed");
